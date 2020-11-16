@@ -49,32 +49,6 @@ class App extends React.Component {
                 error
             });
         }
-
-        // fetch(peopleRoute)
-        //     .then(response => response.json())
-        //     .then(responseJson => {
-        //         return Promise.all(responseJson.results.map(person => {
-        //             return fetch(person['homeworld'])
-        //                 .then(planetsResponse => planetsResponse.json())
-        //                 .then(planetsJson => {
-        //                     person['homeworld'] = planetsJson.name;
-        //                     return person;
-        //                 });
-        //         }))
-        //             .then(peopleObjectArr => _.groupBy(peopleObjectArr, 'homeworld'))
-        //             .then(peopleObjectGroupedArr => {
-        //                 console.log(peopleObjectGroupedArr);
-        //                 this.setState({
-        //                     isLoaded: true,
-        //                     peopleDataGrouped: peopleObjectGroupedArr
-        //                 });
-        //             })
-        //     }, error => {
-        //         this.setState({
-        //             isLoaded: true,
-        //             error
-        //         });
-        //     })
     }
 
 
